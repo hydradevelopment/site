@@ -611,7 +611,8 @@ body {
     .hero .intro h1, .hero .intro h2, .hero .intro h3, .hero .intro h4, .hero .intro h5, .hero .intro h6 {
       color: #333; }
     .hero .intro h1 {
-      font-size: 84.71602px; }
+      font-size: 84.71602px;
+      margin-bottom: 0; }
     .hero .intro h2 {
       font-size: 52.35848px; }
     .hero .intro h3, .hero .intro h4, .hero .intro h5, .hero .intro h6 {
@@ -758,5 +759,9 @@ body {
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
         border-radius: 4px; }
+        .company-info .cards .card article ul {
+          margin-left: 1.5em; }
+          .company-info .cards .card article ul li {
+            list-style-type: disc; }
 
 /*# sourceMappingURL=application.css.map */
