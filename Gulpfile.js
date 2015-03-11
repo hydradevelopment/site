@@ -92,6 +92,7 @@ gulp.task('default', ['views', 'stylesheets', 'javascripts', 'images', 'fonts', 
 gulp.task('deploy', function () {
   return gulp.src("./build/**/*")
     .pipe(deploy({
-      branch: "master"
+      branch: "gh-pages",
+      cacheDir: ".tmp"
     }));
 });
