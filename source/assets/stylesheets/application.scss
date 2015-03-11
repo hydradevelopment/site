@@ -161,6 +161,12 @@ body {
         border: 1px solid;
         @include border-color($secondary-gray);
         @include border-radius(4px);
+         ul {
+           margin-left: 1.5em;
+           li {
+             list-style-type: disc;
+           }
+         }
       }
     }
   }
