@@ -107,10 +107,8 @@ body {
       }
       .cta {
         font-size: 1.2em;
-        button {
-          margin-top: 2em;
-          @include button(pill, #09C);
-        }
+        margin-top: 2em;
+        @include button(pill, #09C);
       }
     }
   }
