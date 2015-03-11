@@ -142,9 +142,6 @@ body {
       .card-header, .card-image, article {
         margin: 20px 1em;
       }
-      .card-header {
-        @extend .text-center;
-      }
 
       .card-image {
         overflow: hidden;
@@ -156,17 +153,23 @@ body {
       }
 
       article {
-        padding: 20px;
-        background-color: white;
-        border: 1px solid;
-        @include border-color($secondary-gray);
-        @include border-radius(4px);
-         ul {
-           margin-left: 1.5em;
-           li {
-             list-style-type: disc;
-           }
-         }
+        .card-header {
+          @extend .text-center;
+        }
+
+        .card-content {
+          padding: 20px;
+          background-color: white;
+          border: 1px solid;
+          @include border-color($secondary-gray);
+          @include border-radius(4px);
+          ul {
+            margin-left: 1.5em;
+            li {
+              list-style-type: disc;
+            }
+          }
+        }
       }
     }
   }

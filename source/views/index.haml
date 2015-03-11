@@ -26,66 +26,73 @@
       .process
         .cards
           %aside.card
-            %article
-              %p.text-center
-                We build minimum viable products &amp; tune applications to help you reach the scale of success.
+            %p.text-center
+              We build minimum viable products &amp; tune applications to help you reach the scale of success.
       %hr
       .header
         %h2 Methodology and Core Values
       .cards
         %aside.card
-          .card-header
-            %h4 Extreme Programming
           %article
-            %p By employing test-driven development, pair programming and constant refactoring, we deliver the highest quality software possible.
+            .card-header
+              %h4 Extreme Programming
+            .card-content
+              %p By employing test-driven development, pair programming and constant refactoring, we deliver the highest quality software possible.
         %aside.card
-          .card-header
-            %h4 Ruby, CoffeeScript and Go
-          %article By pairing the flexibility of dynamic languages with the type-safety and speed of Go, we can squeeze the most out of any application.
+          %article
+            .card-header
+              %h4 Ruby, CoffeeScript and Go
+            .card-content
+              %p By pairing the flexibility of dynamic languages with the type-safety and speed of Go, we can squeeze the most out of any application.
         %aside.card
-          .card-header
-            %h4 Mentoring
-          %article By sharing sharing knowledge and collaborating, we spread the seeds of innovation.
+          %article
+            .card-header
+              %h4 Mentoring
+            .card-content
+              %p By sharing sharing knowledge and collaborating, we spread the seeds of innovation.
       %hr
       .header
         %h2 Recent Clients
       .cards
         %aside.card
-          .card-image
-            %img{ alt: '', src: "http://photos.faun.me/photos/i-54PZmwR/0/X2/i-54PZmwR-M.jpg" }/
-          .card-header
-            %h4 Neo
-            %h5 Team Augmentation
           %article
-            %p For Neo, we augmented an existing team to contribute to a next-generation publishing platform for scientific journals. During the course of this project, we:
-            %ul
-              %li Improved code quality notification and continuous integration stability
-              %li Created an external service to convert ePub documents to PDF and deliver them to application users after conversion
-              %li Generated Ansible playbook and provisioning scripts for deploying application to Amazon EC2
+            .card-image
+              %img{ alt: '', src: "http://photos.faun.me/photos/i-54PZmwR/0/X2/i-54PZmwR-M.jpg" }/
+            .card-header
+              %h4 Neo
+              %h5 Team Augmentation
+            .card-content
+              %p For Neo, we augmented an existing team to contribute to a next-generation publishing platform for scientific journals. During the course of this project, we:
+              %ul
+                %li Improved code quality notification and continuous integration stability
+                %li Created an external service to convert ePub documents to PDF and deliver them to application users after conversion
+                %li Generated Ansible playbook and provisioning scripts for deploying application to Amazon EC2
         %aside.card
-          .card-image
-            %img{ alt: '', src: "http://photos.faun.me/photos/i-Lg4QKFj/0/X2/i-Lg4QKFj-M.jpg" }/
-          .card-header
-            %h4 Timeline Labs
-            %h5 Greenfield Build
           %article
-            %p For Timeline Labs, we built a world-class sentiment analysis tool that helped news organizations and celebrities understand the sentiment and level of user engagement throughout the world. During the course of this project, we:
-            %ul
-              %li Created a startup from a prototype that eventually was aquired
-              %li Built a robust content management system for managing application administration and permissions
-              %li Consumed statistics from a Python API and displayed time-series graphs using D3.js and Rickshaw.js using Angular.js with streaming updates via websockets
+            .card-image
+              %img{ alt: '', src: "http://photos.faun.me/photos/i-Lg4QKFj/0/X2/i-Lg4QKFj-M.jpg" }/
+            .card-header
+              %h4 Timeline Labs
+              %h5 Greenfield Build
+            .card-content
+              %p For Timeline Labs, we built a world-class sentiment analysis tool that helped news organizations and celebrities understand the sentiment and level of user engagement throughout the world. During the course of this project, we:
+              %ul
+                %li Created a startup from a prototype that eventually was aquired
+                %li Built a robust content management system for managing application administration and permissions
+                %li Consumed statistics from a Python API and displayed time-series graphs using D3.js and Rickshaw.js using Angular.js with streaming updates via websockets
         %aside.card
-          .card-image
-            %img{ alt: '', src: "http://photos.faun.me/Events/Camping-at-Angel-Island/i-3VTSrQx/1/M/_MG_3750-M.jpg" }/
-          .card-header
-            %h4 Afolio
-            %h5 Rescue Project
           %article
-            %p For Afolio, we helped to fixup a rescue project with legacy codebase and low test coverage. During the course of this project, we:
-            %ul
-              %li Significantly improved test coverage
-              %li Re-routed file uploads from direct application pass-through to a cloud server via direct upload with push notifications and background job processing
-              %li Increased file upload capacity and reliability while meanwhile significantly decreasing file upload time allowing for greater customer satisfaction and retention
+            .card-image
+              %img{ alt: '', src: "http://photos.faun.me/Events/Camping-at-Angel-Island/i-3VTSrQx/1/M/_MG_3750-M.jpg" }/
+            .card-header
+              %h4 Afolio
+              %h5 Rescue Project
+            .card-content
+              %p For Afolio, we helped to fixup a rescue project with legacy codebase and low test coverage. During the course of this project, we:
+              %ul
+                %li Significantly improved test coverage
+                %li Re-routed file uploads from direct application pass-through to a cloud server via direct upload with push notifications and background job processing
+                %li Increased file upload capacity and reliability while meanwhile significantly decreasing file upload time allowing for greater customer satisfaction and retention
 
     .contact-banner
       %section.contact
