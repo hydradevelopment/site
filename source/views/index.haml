@@ -1,0 +1,86 @@
+!!!
+%html
+  %head
+    %meta{charset: "utf-8"}/
+    %meta{content: "IE=edge,chrome=1", http: {equiv: "X-UA-Compatible"}}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+
+    %title Hydra Development, Inc
+    %link{href: "assets/stylesheets/application.css", rel: "stylesheet", type: "text/css"}
+
+  %body
+    .hero
+      .background-overlay
+      .intro
+        %h1 Hydra Development
+        %h2 Web Applications Done Right
+
+    .callout-banner
+      %section
+        %aside.banner
+          %h5 We build beautiful, scalable applications
+          %a.cta{href: "mailto:hello@hydradev.co?Subject=I%20would%20like%20to%20hire%20you"}
+            %button Get in Touch
+
+    %section.company-info
+      .process
+        .cards
+          %aside.card
+            %article
+              %p.text-center
+                We build minimum viable products &amp; tune applications to help reach the scale of success.
+      %hr
+      .header
+        %h2 Methodology
+      .cards
+        %aside.card
+          .card-header
+            %h4 XP-style Programming
+          %article
+            %p We employ Test-driven Development, Pair Programming, constant refactoring.
+        %aside.card
+          .card-header
+            %h4 Ruby, Coffeescript and Go
+          %article By pairing the flexabilty of dynamic languages with the type-safety and speed of Go, we can squeeze the most out of any application.
+        %aside.card
+          .card-header
+            %h4 Mentoring
+          %article Knowlege sharing and collaboration are at the core of what we do.
+      %hr
+      .header
+        %h2 Recent Clients
+      .cards
+        %aside.card
+          .card-image
+            %img{ alt: '', src: "http://photos.faun.me/photos/i-54PZmwR/0/X2/i-54PZmwR-M.jpg" }/
+          .card-header
+            %h4 Neo
+          %article
+            %p Team augmentation project to contribute to a next-generation publishing platform for scientific journals:
+            %ul
+              %li Built on Rails 4 with a JSON API, Ember.js, Server-sent events and service-oriented architecture.
+              %li Created an external service to convert ePub documents to PDF and deliver them to application users after conversion.
+              %li Generated Ansible playbook and provisioning scripts for deploying application to Amazon EC2.
+        %aside.card
+          .card-image
+            %img{ alt: '', src: "http://photos.faun.me/photos/i-Lg4QKFj/0/X2/i-Lg4QKFj-M.jpg" }/
+          .card-header
+            %h4 Timeline Labs
+          %article
+            %p Parnering with with a social media sentiment analysis startup to build a world-class sentiment analysis tool, we helped news organizations and celebrities understand the sentiment and level of user engagement throughout the world.
+            %p Sentiment analysis statistics consumed from a Python API and displayed using D3.js and Rickshaw.js using Angular.js.
+        %aside.card
+          .card-image
+            %img{ alt: '', src: "http://photos.faun.me/Events/Camping-at-Angel-Island/i-3VTSrQx/1/M/_MG_3750-M.jpg" }/
+          .card-header
+            %h4 Afolio
+          %article
+            %p We worked on photo sharing application rescue project with low test coverage and slow uploads. Improved test coverage and re-routed file uploads from direct application pass-through to a cloud server via direct upload with push notifications and background job processing.
+            %p Increased file upload capacity and reliability while meanwhile significantly decreasing file upload time allowed for greater customer satisfaction and retention.
+
+    .contact-banner
+      %section.contact
+        %aside.mailing-address.banner
+          %p Copyright 2015 Hydra Development, Inc.
+    %script{src: "https://code.jquery.com/jquery-2.1.1.min.js", type: "text/javascript"}
+    %script{src: "assets/javascripts/application.js", type: "text/javascript"}
