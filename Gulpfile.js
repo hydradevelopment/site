@@ -90,7 +90,7 @@ gulp.task('default', ['views', 'stylesheets', 'javascripts', 'images', 'fonts', 
 
 // Deploy
 gulp.task('deploy', function () {
-  return gulp.src("./build/**/*")
+  return gulp.src(["./build/**/*", "./CNAME"])
     .pipe(deploy({
       branch: "gh-pages",
       cacheDir: ".tmp"
