@@ -22,6 +22,11 @@ body {
   font-size: $base-font-size;
 }
 
+hr {
+  margin: 1em;
+  border-bottom: 1px solid $secondary-gray;
+}
+
 .text-center {
   text-align: center;
 }
@@ -114,14 +119,13 @@ body {
   }
 }
 
+.company-description {
+  padding: 2em 1em 1em;
+}
+
 .company-info {
   @include outer-container;
   @include pad(40px default);
-
-  hr {
-    margin: 1em;
-    border-bottom: 1px solid $secondary-gray;
-  }
 
   .header {
     @extend .text-center;
