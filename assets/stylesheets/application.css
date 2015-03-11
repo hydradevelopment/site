@@ -589,7 +589,7 @@ body {
   position: relative;
   font-size: 20px; }
 
-.text-center, .hero .intro, .callout-banner section aside.banner, .contact-banner section aside.banner, .company-info .header, .company-info .cards .card .card-header {
+.text-center, .hero .intro, .callout-banner section aside.banner, .contact-banner section aside.banner, .company-info .header, .company-info .cards .card article .card-header {
   text-align: center; }
 
 .hero {
@@ -747,11 +747,10 @@ body {
       .company-info .cards .card .card-header, .company-info .cards .card .card-image, .company-info .cards .card article {
         margin: 20px 1em; }
       .company-info .cards .card .card-image {
-        overflow: hidden;
-        height: 200px; }
+        overflow: hidden; }
         .company-info .cards .card .card-image img {
           width: 100%; }
-      .company-info .cards .card article {
+      .company-info .cards .card article .card-content {
         padding: 20px;
         background-color: white;
         border: 1px solid;
@@ -759,9 +758,9 @@ body {
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
         border-radius: 4px; }
-        .company-info .cards .card article ul {
+        .company-info .cards .card article .card-content ul {
           margin-left: 1.5em; }
-          .company-info .cards .card article ul li {
+          .company-info .cards .card article .card-content ul li {
             list-style-type: disc; }
 
 /*# sourceMappingURL=application.css.map */
