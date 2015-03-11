@@ -589,6 +589,10 @@ body {
   position: relative;
   font-size: 20px; }
 
+hr {
+  margin: 1em;
+  border-bottom: 1px solid #C1C1C1; }
+
 .text-center, .hero .intro, .callout-banner section .banner, .contact-banner section .banner, .company-info .header, .company-info .cards .card article .card-header, .contact-banner .copyright {
   text-align: center; }
 
@@ -696,6 +700,9 @@ body {
           cursor: not-allowed;
           opacity: 0.5; }
 
+.company-description {
+  padding: 2em 1em 1em; }
+
 .company-info {
   max-width: 68em;
   margin-left: auto;
@@ -705,9 +712,6 @@ body {
     clear: both;
     content: "";
     display: table; }
-  .company-info hr {
-    margin: 1em;
-    border-bottom: 1px solid #C1C1C1; }
   .company-info .header {
     font-size: 52.35848px; }
   .company-info .cards {
