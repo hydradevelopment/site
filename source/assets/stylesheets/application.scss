@@ -98,7 +98,7 @@ body {
   section {
 
     @include outer-container;
-    aside.banner {
+    .banner {
       @extend .text-center;
       padding: 3em;
       h5 {
@@ -174,4 +174,9 @@ body {
 
 .contact-banner {
   @extend .callout-banner;
+  .copyright {
+    @extend .text-center;
+    padding: 2em;
+    font-size: $base-font-size;
+  }
 }

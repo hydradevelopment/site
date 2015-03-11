@@ -17,7 +17,7 @@
 
     .callout-banner
       %section
-        %aside.banner
+        .banner
           %h5 Building beautiful scalable applications
           %a.cta{href: "mailto:hello@hydradev.co?Subject=I%20would%20like%20to%20hire%20Hydra"}
             Get in Touch
@@ -26,7 +26,7 @@
       .process
         .cards
           %aside.card
-            %p.text-center
+            %h5.text-center
               We build minimum viable products &amp; tune applications to help you reach the scale of success.
       %hr
       .header
@@ -95,8 +95,8 @@
                 %li Increased file upload capacity and reliability while meanwhile significantly decreasing file upload time allowing for greater customer satisfaction and retention
 
     .contact-banner
-      %section.contact
-        %aside.mailing-address.banner
-          %p Copyright 2015 Hydra Development, Inc.
+      .copyright
+        %small
+          Copyright © 2015 Hydra Development, Inc.
     %script{src: "https://code.jquery.com/jquery-2.1.1.min.js", type: "text/javascript"}
     %script{src: "assets/javascripts/application.js", type: "text/javascript"}
