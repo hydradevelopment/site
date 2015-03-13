@@ -15,10 +15,6 @@ hr {
   text-align: center;
 }
 
-@mixin border-radius($size) {
-  @include prefixer(border-radius, $size, webkit moz spec);
-}
-
 .hero {
   $image-gradient-color-top: red;
   $transparency-top: 0.9;
