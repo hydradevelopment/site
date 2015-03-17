@@ -1,1 +1,37 @@
- 
+@include media($mobile) {
+
+  %h1-mobile {
+    font-size: 1.8em;
+  }
+
+  %h2-mobile {
+    font-size: 1.4em;
+  }
+
+  %h3-mobile {
+    font-size: 1.2em;
+  }
+
+  h1 {
+    @extend %h1-mobile;
+  }
+
+  h2 {
+    @extend %h2-mobile;
+  }
+
+  .company-info {
+    .client-name,
+    .toolset {
+      @extend %h2-mobile;
+    }
+  }
+
+  .callout-banner {
+    .banner {
+      .tagline {
+        @extend %h2-mobile;
+      }
+    }
+  }
+}
