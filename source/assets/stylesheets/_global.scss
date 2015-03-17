@@ -6,6 +6,16 @@ body {
   position: relative;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $dark-gray;
+  font-size: golden-ratio($base-font-size, 1);
+}
+
 hr {
   border-bottom: 1px solid $secondary-gray;
   margin: 1em;
@@ -29,10 +39,6 @@ hr {
     margin: auto;
     position: absolute;
     @extend .text-center;
-
-    h1, h2, h3, h4, h5, h6 {
-      color: $dark-gray;
-    }
 
     h1 {
       font-size: golden-ratio($base-font-size,  3);
@@ -73,8 +79,18 @@ hr {
 .callout-banner {
   min-height: 100px;
   background-color: $dark-gray;
-  section {
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    color: $light-gray;
+  }
+
+  section {
     @include outer-container;
     .banner {
       @extend .text-center;
