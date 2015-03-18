@@ -15,7 +15,7 @@ $tablet-landscape-size: 801px;
 $desktop-size: 1025px;
 $largedesktop-size: 1050px;
 
-$mobile: new-breakpoint(min-width $mobile-size 4);
+$mobile: new-breakpoint(min-width $mobile-size max-width $tablet-size 4);
 $mobile-landscape: new-breakpoint(min-width $mobile-landscape-size 4);
 $tablet: new-breakpoint(min-width $tablet-size 8);
 $tablet-landscape: new-breakpoint(min-width $tablet-landscape-size 8);
