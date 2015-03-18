@@ -96,7 +96,7 @@ hr {
   @extend %callout;
   .cta {
     @include button(pill, $steel-blue);
-    font-size: 1.2em;
+    font-size: 1.25em;
     margin-top: 2em;
   }
 }
