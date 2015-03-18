@@ -21,7 +21,7 @@ hr {
   margin: 1em;
 }
 
-.text-center {
+%centered {
   text-align: center;
 }
 
@@ -38,7 +38,7 @@ hr {
     z-index: 999;
     margin: auto;
     position: absolute;
-    @extend .text-center;
+    @extend %centered;
 
     h1 {
       margin-bottom: 0;
@@ -83,7 +83,7 @@ hr {
 
   .banner {
     @include outer-container;
-    @extend .text-center;
+    @extend %centered;
     padding: 3em;
     .tagline {
       color: $light-gray;
@@ -98,6 +98,7 @@ hr {
 }
 
 .company-description {
+  @extend %centered;
   padding: 2em 1em 1em;
 }
 
@@ -106,7 +107,7 @@ hr {
   @include pad(40px default);
 
   .header {
-    @extend .text-center;
+    @extend %centered;
   }
 
   .cards {
@@ -124,7 +125,7 @@ hr {
 
       .card-image {
         overflow: hidden;
-        text-align: center;
+        @extend %centered;
 
         img {
           max-height: 233px;
@@ -134,7 +135,7 @@ hr {
 
       article {
         .card-header {
-          @extend .text-center;
+          @extend %centered;
         }
 
         .card-content {
@@ -158,7 +159,7 @@ hr {
 .contact-banner {
   @extend .callout-banner;
   .copyright {
-    @extend .text-center;
+    @extend %centered;
     padding: 2em;
     font-size: $base-font-size;
   }
