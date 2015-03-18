@@ -81,17 +81,18 @@ hr {
     color: $dark-gray;
   }
 
-  section {
+  .banner {
     @include outer-container;
-    .banner {
-      @extend .text-center;
-      padding: 3em;
+    @extend .text-center;
+    padding: 3em;
+    .tagline {
+      color: $light-gray;
+    }
 
-      .cta {
-        font-size: 1.2em;
-        margin-top: 2em;
-        @include button(pill, #09C);
-      }
+    .cta {
+      font-size: 1.2em;
+      margin-top: 2em;
+      @include button(pill, #09C);
     }
   }
 }
