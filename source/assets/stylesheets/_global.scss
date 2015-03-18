@@ -13,7 +13,14 @@ h4,
 h5,
 h6 {
   color: $dark-gray;
-  font-size: golden-ratio($base-font-size, 1);
+}
+
+h1 {
+  @extend %large-header;
+}
+
+h2 {
+  @extend %medium-header;
 }
 
 hr {
@@ -94,6 +101,11 @@ hr {
 
 .hero-callout {
   @extend %callout;
+
+  .tagline {
+    @extend %medium-header;
+  }
+
   .cta {
     @include button(pill, $steel-blue);
     font-size: 1.25em;
@@ -105,14 +117,33 @@ hr {
 .company-description {
   @extend %centered;
   padding: 2em 1em 1em;
+
+  .what-we-do {
+    @extend %medium-header;
+  }
 }
 
 .company-info {
   @include outer-container;
   @include pad(40px default);
 
-  .header {
+  .values {
     @extend %centered;
+    @extend %medium-header;
+  }
+
+  .recent-clients {
+    @extend %centered;
+    @extend %medium-header;
+  }
+
+  .header {
+    @extend %medium-header;
+  }
+
+  .client-name,
+  .toolset {
+    @extend %small-header;
   }
 
   .cards {

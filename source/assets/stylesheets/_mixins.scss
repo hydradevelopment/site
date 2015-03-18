@@ -1,3 +1,19 @@
 @mixin border-radius($size) {
   @include prefixer(border-radius, $size, webkit moz spec);
 }
+
+%large-header {
+  font-size: golden-ratio($base-font-size, 3);
+}
+
+%medium-header {
+  font-size: golden-ratio($base-font-size, 2);
+}
+
+%small-header {
+  font-size: golden-ratio($base-font-size, 1);
+}
+
+%xsmall-header {
+  font-size: $base-font-size * 1.125;
+}

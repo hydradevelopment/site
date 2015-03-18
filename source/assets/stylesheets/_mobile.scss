@@ -1,37 +1,35 @@
 @include media($mobile) {
+  %large-header-mobile {
+    font-size: 2.5em;
+  }
 
-  %h1-mobile {
+  %medium-header-mobile {
     font-size: 1.8em;
   }
 
-  %h2-mobile {
-    font-size: 1.4em;
-  }
-
-  %h3-mobile {
+  %small-header-mobile {
     font-size: 1.2em;
   }
 
-  h1 {
-    @extend %h1-mobile;
-  }
+  .hero {
+    h1 {
+      @extend %large-header-mobile;
+    }
 
-  h2 {
-    @extend %h2-mobile;
-  }
-
-  .company-info {
-    .client-name,
-    .toolset {
-      @extend %h2-mobile;
+    h2 {
+      @extend %medium-header-mobile;
     }
   }
 
-  .callout-banner {
-    .banner {
-      .tagline {
-        @extend %h2-mobile;
-      }
+  .hero-callout {
+    .tagline {
+      @extend %small-header-mobile;
+    }
+  }
+
+  .company-description {
+    .what-we-do {
+      @extend %small-header-mobile;
     }
   }
 }
