@@ -67,7 +67,7 @@ hr {
   }
 }
 
-.callout-banner {
+%callout {
   background-color: $dark-gray;
   min-height: 100px;
 
@@ -89,13 +89,18 @@ hr {
       color: $light-gray;
     }
 
-    .cta {
-      @include button(pill, $steel-blue);
-      font-size: 1.2em;
-      margin-top: 2em;
-    }
   }
 }
+
+.hero-callout {
+  @extend %callout;
+  .cta {
+    @include button(pill, $steel-blue);
+    font-size: 1.2em;
+    margin-top: 2em;
+  }
+}
+
 
 .company-description {
   @extend %centered;
@@ -159,7 +164,7 @@ hr {
 }
 
 .contact-banner {
-  @extend .callout-banner;
+  @extend %callout;
 
   .copyright {
     @extend %centered;
