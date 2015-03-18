@@ -31,14 +31,14 @@ hr {
   width: 100%;
 
   .intro {
+    @extend %centered;
     @include transform(translate(-50%, -50%));
-    width: 100%;
     left: 50%;
-    top: 50%;
-    z-index: 999;
     margin: auto;
     position: absolute;
-    @extend %centered;
+    top: 50%;
+    width: 100%;
+    z-index: 999;
 
     h1 {
       margin-bottom: 0;
@@ -52,24 +52,24 @@ hr {
     &:after {
       @include linear-gradient($horizontal-angle, transparentize($image-gradient-color-left, $transparency-left),
       transparentize($image-gradient-color-right, $transparency-right));
-      @include position(absolute, 0px 0px 0px 0px);
+      @include position(absolute, 0);
       content: '';
       display: block;
     }
 
-    height: auto;
-    width: 100%;
-    min-height: 700px;
-    position: relative;
     background: url("https://cloud.githubusercontent.com/assets/59880/6454073/3aef93f0-c0fa-11e4-9566-e76d5e295ac5.jpg") no-repeat;
     background-position: center;
     background-size: cover;
+    height: auto;
+    min-height: 700px;
+    position: relative;
+    width: 100%;
   }
 }
 
 .callout-banner {
-  min-height: 100px;
   background-color: $dark-gray;
+  min-height: 100px;
 
   h1,
   h2,
@@ -81,17 +81,18 @@ hr {
   }
 
   .banner {
-    @include outer-container;
     @extend %centered;
+    @include outer-container;
     padding: 3em;
+
     .tagline {
       color: $light-gray;
     }
 
     .cta {
+      @include button(pill, $steel-blue);
       font-size: 1.2em;
       margin-top: 2em;
-      @include button(pill, #09C);
     }
   }
 }
@@ -118,13 +119,15 @@ hr {
       @include flex-basis(20em);
       @include flex-grow(1);
 
-      .card-header, .card-image, article {
+      .card-header,
+      .card-image,
+      article {
         margin: 20px 1em;
       }
 
       .card-image {
-        overflow: hidden;
         @extend %centered;
+        overflow: hidden;
 
         img {
           max-height: 233px;
@@ -138,11 +141,11 @@ hr {
         }
 
         .card-content {
-          padding: 20px;
-          background-color: white;
-          border: 1px solid;
           @include border-color($secondary-gray);
           @include border-radius(4px);
+          background-color: $white;
+          border: 1px solid;
+          padding: 20px;
           ul {
             margin-left: 1.5em;
             li {
@@ -157,9 +160,10 @@ hr {
 
 .contact-banner {
   @extend .callout-banner;
+
   .copyright {
     @extend %centered;
-    padding: 2em;
     font-size: $base-font-size;
+    padding: 2em;
   }
 }
